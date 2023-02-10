@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REST API Automation">
+ <listeners>
+        <listener class-name="com.restapi.listeners.TestListener"></listener>
+    </listeners>
+  <test thread-count="5" name="Test">
+    
+    <classes>
+    <!-- <class name="com.restapi.tests.PostRequestTests">
+                <methods>
+                    <include name="postTestUsingPojo" />
+                    <include name="postRequestUsingExternalFile" />
+                    <include name="postRequestUsingExternalFile1" />
+                </methods>
+            </class>
+            <class name="com.restapi.tests.GetRequestTests">
+                <methods>
+                    <include name="getEmployeesDetails" />
+                    <include name="getEmployeeDetail" />
+                </methods>
+            </class>-->
+           
+         <class name="com.restapi.tests.AssignmentTests">
+                <methods>
+                    <include name="assignmentTest" />
+                </methods>
+            </class>
+        </classes>
+  </test> 
+</suite> 

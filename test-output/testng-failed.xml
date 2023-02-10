@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [REST API Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.restapi.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.restapi.tests.GetRequestTests">
+        <methods>
+          <include name="getEmployeeDetail" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- com.restapi.tests.GetRequestTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [REST API Automation] -->
